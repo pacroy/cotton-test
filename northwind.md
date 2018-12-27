@@ -86,3 +86,22 @@ Get single customer ID `BOLID`
 | StatusCode | 200 |
 | Data.d.ProductID | 1 |
 | Data.d.Discontinued | *Should be false* |
+
+# 5. Get Employee 1 (Slash tests)
+
+## GET /V2/Northwind/Northwind.svc/Employees(1)?$select=EmployeeID,FirstName,LastName, BirthDate,PhotoPath
+
+| Header | Value |
+| - | - |
+| Accept | application/json |
+
+## Expectation
+
+| Assert | Expected |
+| - | - |
+| StatusCode | 200 |
+| Data.d.EmployeeID | 1 |
+| Data.d.LastName | Davolio |
+| Data.d.FirstName | Nancy |
+| Data.d.BirthDate | /Date(-664761600000)/ |
+| Data.d.PhotoPath | http://accweb/emmployees/davolio.bmp |
