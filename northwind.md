@@ -103,5 +103,5 @@ Get single customer ID `BOLID`
 | Data.d.EmployeeID | 1 |
 | Data.d.LastName | Davolio |
 | Data.d.FirstName | Nancy |
-| Data.d.BirthDate | /Date(-664761600000)/ |
 | Data.d.PhotoPath | http://accweb/emmployees/davolio.bmp |
+| Data.d.BirthDate | /\/Date\(-664761600000\)\// |
